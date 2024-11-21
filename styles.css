@@ -1,0 +1,279 @@
+/* Styles globaux pour un arrière-plan couvrant */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("image22.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: hsl(0, 0%, 100%); /* Couleur du texte */
+  text-shadow: 5px 2px 4px rgb(0, 0, 0); /* Lisibilité sur image */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between; /* Sépare le logo et le menu */
+  align-items: center; /* Centre verticalement les éléments */
+  padding: 10px 20px; /* Espacement intérieur */
+  background: rgba(255, 255, 255, 0.418); /* Transparence pour lisibilité */
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 2px 5px rgba(8, 8, 8, 0.1); /* Ajout d'un effet de profondeur */
+}
+
+/* Logo centré verticalement */
+.logo img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
+/* Menu de navigation */
+nav ul.nav-links {
+  display: flex; /* Menu horizontal */
+  list-style-type: none; /* Supprime les puces */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.nav-links li {
+  margin-left: 20px; /* Espacement entre les liens */
+}
+
+nav ul.nav-links a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #000; /* Couleur par défaut */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Animation fluide sur la couleur */
+}
+
+nav ul.nav-links a:hover {
+  color: #ffffff; /* Couleur au survol */
+}
+
+/* Section principale */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Texte principal de la page d'accueil */
+#accueil h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
+  margin: 20px 0;
+}
+
+#accueil p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(19, 18, 18, 0.8);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Section produits */
+#produits {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'ajuster les éléments sur plusieurs lignes */
+  justify-content: center; /* Centre les éléments */
+  gap: 50px; /* Espacement entre les produits */
+  padding: 50px;
+}
+
+
+.produit img {
+  width: 100%; /* Ajuste automatiquement à la largeur du conteneur */
+  height: auto; /* Préserve les proportions */
+  max-height: 300px; /* Augmentez cette valeur pour agrandir les images */
+  object-fit: contain; /* Garde toute l'image visible sans déformation */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Ajoute un effet d'animation */
+}
+
+/* Effet zoom au survol */
+.produit img:hover {
+  transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+}
+
+
+
+  
+
+.produit h3 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+  color: #030000;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Lisibilité sur image */
+
+}
+
+.produit p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Lisibilité sur image */
+}
+.produit button {
+  display: block; /* Assure que le bouton est affiché comme un bloc */
+  z-index: 10; /* Position au-dessus des autres éléments */
+  visibility: visible; /* Assure qu'il n'est pas caché */
+}
+
+/* Style pour le lien "Commander" */
+.btn-commander {
+  display: inline-block;
+  background: #007BFF; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 10px 20px; /* Espace intérieur */
+  font-size: 1rem; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+  border-radius: 4px; /* Coins arrondis */
+  transition: background 0.3s ease; /* Animation pour l'effet au survol */
+}
+
+/* Effet au survol */
+.btn-commander:hover {
+  background: #0056b3; /* Couleur au survol */
+}
+
+
+/* Bouton "Commander" */
+.produit button {
+  background: #007BFF; /* Couleur principale */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.produit button:hover {
+  background: #0056b3; /* Couleur au survol */
+}
+
+/* Section contact */
+#contact {
+  padding: 40px;
+  background: rgba(145, 143, 143, 0.8);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+  background: #0056b3;
+}
+
+/* Icônes des réseaux sociaux */
+#reseaux-sociaux {
+  margin-top: 30px;
+}
+
+#reseaux-sociaux h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#reseaux-sociaux .icones {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacement entre les icônes */
+}
+
+#reseaux-sociaux .icones a img {
+  width: 40px; /* Taille des icônes */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#reseaux-sociaux .icones a img:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Pied de page */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Adaptabilité pour mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Alignement vertical sur petits écrans */
+    text-align: center;
+  }
+
+  nav ul.nav-links {
+    flex-direction: column; /* Menu vertical sur mobile */
+    margin-top: 10px;
+  }
+
+  nav ul.nav-links li {
+    margin: 10px 0;
+  }
+
+  #accueil h1 {
+    font-size: 2.5rem;
+  }
+
+  #accueil p {
+    font-size: 1rem;
+  }
+
+  #produits {
+    flex-direction: column; /* Une seule colonne sur mobile */
+  }
+
+  .produit {
+    width: 90%; /* Largeur ajustée sur petits écrans */
+  }
+}
