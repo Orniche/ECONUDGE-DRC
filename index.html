@@ -1,129 +1,307 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - ECO NUDGE DRC</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    section {
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    ul {
-      margin-bottom: 15px;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    h1, h2, h3 {
-      margin-bottom: 10px;
-    }
-    .client-group img,
-    .image-service img {
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body class="loading">
-  <header>
-    <div class="logo">
-      <img src="eco1.jpg" alt="Logo ECO NUDGE DRC">
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- Section Accueil -->
-    <section id="accueil">
-      <h1>Bienvenue Chez <strong>ECONUDGE DRC</strong></h1>
-      <h2>Votre partenaire pour un avenir durable</h2>
-      <p>Chez <strong>ECONUDGE DRC</strong>, nous croyons en un monde où le recyclage et l’innovation se rencontrent pour construire un avenir durable et responsable.
+/* Styles globaux pour un arrière-plan couvrant */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(243, 238, 238); /* Fond blanc */
+  color: hsl(0, 0%, 1%); /* Couleur du texte */
+  text-shadow: 5px 2px 4px rgb(255, 251, 251); /* Lisibilité sur image */
+}
+/* Couleur verte pour les titres spécifiques */
+h1, h2, h3 {
+  color: #008000; /* Vert */
+}
 
-        Notre mission est de lutter contre le fléau des déchets plastiques considérés comme rebuts en matériaux de construction et d’embellissement durables de haut de gamme. En choisissant nos solutions, vous contribuez activement à la protection de l’environnement tout en adoptant des produits écologiques, performants et parfaitement adaptés à vos besoins.</p>
-    </section>
 
-    <!-- Section NOS PRODUITS -->
-    <section id="produits">
-      <h3><strong>Nos produits</strong></h3>
-      <p>Nous concevons des matériaux de construction écologiques alliant plastiques recyclés et sable, une alternative innovante et durable aux pavés traditionnels en béton et aux routes goudronnées coûteuses.
-      Pensés pour répondre aux exigences des particuliers et des professionnels, nos produits se démarquent par leur robustesse et leurs performances. Ils s’adaptent parfaitement à des projets variés, allant de l’aménagement d’espaces extérieurs à la construction de routes secondaires durables.
-        </p>
-    </section>
+/* Couleurs spécifiques pour des sections précises */
+#accueil h2,
+#produits h3,
+#pourquoi-nous h2,
+#avantages-environnement h2,
+#avantages-environnement h3,
+#strong Chez EconudgeDRC strong,
+#mission h2,
+#h3 Pavé Lisanga h3
+#services h2,
+#clients h2,
+#clients .client-group h3 {
+  color: #008000; /* Vert */
+}
 
-    <!-- Section POURQUOI NOUS -->
-    <section id="pourquoi-nous">
-      <h2><strong>Pourquoi Nous ?</strong></h2>
-      <ul>
-        <li><strong>Du long terme :</strong> Lorsque vous souhaitez changer de décor, vous pouvez nous revendre vos pavés ou les échanger contre un autre modèle à un prix réduit.</li>
-        <li><strong>Durabilité et qualité :</strong> Nos matériaux de construction ne sont pas seulement écologiques, mais aussi économiquement avantageux, offrant une alternative durable sans compromettre la qualité ou la sécurité.</li>
-        <li><strong>Personnalisation et création d'emplois locaux :</strong> Avec ECONUDGE DRC, la personnalisation des matériaux est possible suivant la forme ou la couleur désirée par le client. Nous mettons sur le marché une gamme de produits variés à des prix accessibles créés par des Congolais.</li>
-        <li><strong>Éducation environnementale et santé communautaire :</strong> ECONUDGE DRC sensibilise sur le tri sélectif, réduisant ainsi les inondations et leurs conséquences sanitaires et sociales.</li>
-      </ul>
-    </section>
+/* Style pour les prix */
+.prix {
+  color: #008000; /* Couleur verte */
+  font-weight: bold; /* Gras pour mettre en évidence */
+}
 
-    <!-- Section AVANTAGES ENVIRONNEMENTAUX -->
-    <section id="avantages-environnement">
-      <h2><strong>Avantages Environnementaux et Sociaux</strong></h2>
-      <h3>Impact Environnemental</h3>
-      <p>En utilisant les <strong>déchets plastiques</strong> comme ressource principale, nous réduisons la pollution, diminuons l'empreinte carbone de la construction et contribuons à la lutte contre le changement climatique.</p>
-      <h3>Engagement Social</h3>
-      <p><strong>ECONUDGE DRC</strong> s'investit dans le développement communautaire en éduquant les élèves sur l'environnement, soutenant les initiatives de tri, et en créant des emplois locaux.</p>
-    </section>
 
-    <!-- Section MISSION -->
-    <section id="mission">
-      <h2><strong>Notre Mission</strong></h2>
-      <p><strong>ECONUDGE DRC</strong> s'attaque à la pollution plastique via 3 axes : sensibilisation et éducation environnementale, collecte et recyclage des déchets plastiques en matériaux de construction durables, offrant des solutions innovantes pour le bâtiment.</p>
-    </section>
+footer p {
+  color: #ebe5e3; /* Exemple de couleur (orange) */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Ombre légère */
+  font-style: italic; /* Texte en italique */
+}
 
-    <!-- Section SERVICES -->
-    <section id="services">
-      <h2><strong>Nos Services</strong></h2>
-      <ul>
-        <li>Vente de pavés</li>
-        <li>Livraison</li>
-        <li>Pose de pavés</li>
-      </ul>
-      <div class="image-service">
-        <img src="image1.jpg" alt="Services" style="width: 300px;">
-      </div>
-    </section>
 
-    <!-- Section CLIENTS -->
-    <section id="clients">
-      <h2><strong>Nos Clients</strong></h2>
-      <div class="client-group">
-        <h3><strong>BtoC</strong></h3>
-        <p>Particuliers, Ingénieurs en construction.</p>
-        <img src="icone1.jpg" alt="BtoC Clients" style="width: 150px;">
-      </div>
-      <div class="client-group">
-        <h3><strong>BtoB</strong></h3>
-        <p>Quincailleries, Agences de BTP.</p>
-        <img src="icone3.jpg" alt="BtoB Clients" style="width: 150px;">
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 <strong>ECONUDGE DRC</strong>. Tous droits réservés.</p>
-  </footer>
-</body>
-</html>
 
-</html>
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between; /* Sépare le logo et le menu */
+  align-items: center; /* Centre verticalement les éléments */
+  padding: 10px 20px; /* Espacement intérieur */
+  background: rgba(255, 255, 255, 0.418); /* Transparence pour lisibilité */
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'un effet de profondeur */
+}
+
+/* Logo centré verticalement */
+.logo img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
+/* Menu de navigation */
+nav ul.nav-links {
+  display: flex; /* Menu horizontal */
+  list-style-type: none; /* Supprime les puces */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.nav-links li {
+  margin-left: 20px; /* Espacement entre les liens */
+}
+
+nav ul.nav-links a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #050505; /* Couleur par défaut */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Animation fluide sur la couleur */
+}
+
+nav ul.nav-links a:hover {
+  color: #008000; /* Couleur au survol */
+}
+
+/* Section principale */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Texte principal de la page d'accueil */
+#accueil h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #008000;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
+  margin: 20px 0;
+}
+
+#accueil p {
+  font-size: 1.2rem;
+  color: #121312;
+  text-shadow: 1px 1px 3px #ffffff;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Section produits */
+#produits {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'ajuster les éléments sur plusieurs lignes */
+  justify-content: center; /* Centre les éléments */
+  gap: 50px; /* Espacement entre les produits */
+  padding: 50px;
+}
+
+.produit img {
+  width: 100%; /* Ajuste automatiquement à la largeur du conteneur */
+  height: auto; /* Préserve les proportions */
+  max-height: 300px; /* Augmentez cette valeur pour agrandir les images */
+  object-fit: contain; /* Garde toute l'image visible sans déformation */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Ajoute un effet d'animation */
+}
+
+/* Effet zoom au survol */
+.produit img:hover {
+  transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+}
+
+.produit h4 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgb(250, 244, 244); /* Lisibilité sur image */
+}
+
+.produit p {
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Lisibilité sur image */
+}
+.produit button {
+  display: block; /* Assure que le bouton est affiché comme un bloc */
+  z-index: 10; /* Position au-dessus des autres éléments */
+  visibility: visible; /* Assure qu'il n'est pas caché */
+}
+
+/* Style pour le lien "Commander" */
+.btn-commander {
+  display: inline-block;
+  background: #000000; /* Couleur de fond */
+  color: #fcfbfb; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 10px 20px; /* Espace intérieur */
+  font-size: 1rem; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+  border-radius: 4px; /* Coins arrondis */
+  transition: background 0.3s ease; /* Animation pour l'effet au survol */
+}
+
+/* Effet au survol */
+.btn-commander:hover {
+  background: #008000; /* Couleur au survol */
+}
+
+/* Bouton "Commander" */
+.produit button {
+  background: #007BFF; /* Couleur principale */
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.produit button:hover {
+  background: #0056b3; /* Couleur au survol */
+}
+
+/* Section contact */
+#contact {
+  padding: 40px;
+  background: rgba(255, 250, 250, 0.8);
+  text-align: center;
+}
+
+#contact h5 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  background: #050505;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+  background: #008000;
+}
+
+/* Icônes des réseaux sociaux */
+#reseaux-sociaux {
+  margin-top: 30px;
+}
+
+#reseaux-sociaux h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#reseaux-sociaux .icones {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacement entre les icônes */
+}
+
+#reseaux-sociaux .icones a img {
+  width: 40px; /* Taille des icônes */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#reseaux-sociaux .icones a img:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fcf6f6;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Adaptabilité pour mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Alignement vertical sur petits écrans */
+    text-align: center;
+  }
+
+  nav ul.nav-links {
+    flex-direction: column; /* Menu vertical sur mobile */
+    margin-top: 10px;
+  }
+
+  nav ul.nav-links li {
+    margin: 10px 0;
+  }
+
+  #accueil h1 {
+    font-size: 2.5rem;
+  }
+
+  #accueil p {
+    font-size: 1rem;
+  }
+
+  #produits {
+    flex-direction: column; /* Une seule colonne sur mobile */
+  }
+
+  .produit {
+    width: 90%; /* Largeur ajustée sur petits écrans */
+  }
+}
 
