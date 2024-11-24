@@ -2,11 +2,45 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("image22.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: hsl(0, 0%, 100%); /* Couleur du texte */
-  text-shadow: 5px 2px 4px rgb(0, 0, 0); /* Lisibilité sur image */
+  background-color: rgb(243, 238, 238); /* Fond blanc */
+  color: hsl(0, 0%, 1%); /* Couleur du texte */
+  text-shadow: 5px 2px 4px rgb(255, 251, 251); /* Lisibilité sur image */
 }
+/* Couleur verte pour les titres spécifiques */
+h1, h2, h3 {
+  color: #008000; /* Vert */
+}
+
+
+/* Couleurs spécifiques pour des sections précises */
+#accueil h2,
+#produits h3,
+#pourquoi-nous h2,
+#avantages-environnement h2,
+#avantages-environnement h3,
+#strong Chez EconudgeDRC strong,
+#mission h2,
+#h3 Pavé Lisanga h3
+#services h2,
+#clients h2,
+#clients .client-group h3 {
+  color: #008000; /* Vert */
+}
+
+/* Style pour les prix */
+.prix {
+  color: #008000; /* Couleur verte */
+  font-weight: bold; /* Gras pour mettre en évidence */
+}
+
+
+footer p {
+  color: #ebe5e3; /* Exemple de couleur (orange) */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Ombre légère */
+  font-style: italic; /* Texte en italique */
+}
+
+
 
 /* Header */
 header {
@@ -17,7 +51,7 @@ header {
   background: rgba(255, 255, 255, 0.418); /* Transparence pour lisibilité */
   position: relative;
   z-index: 2;
-  box-shadow: 0px 2px 5px rgba(8, 8, 8, 0.1); /* Ajout d'un effet de profondeur */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'un effet de profondeur */
 }
 
 /* Logo centré verticalement */
@@ -40,7 +74,7 @@ nav ul.nav-links li {
 
 nav ul.nav-links a {
   text-decoration: none; /* Supprime le soulignement */
-  color: #000; /* Couleur par défaut */
+  color: #050505; /* Couleur par défaut */
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
   font-size: 18px;
   font-weight: bold;
@@ -48,7 +82,7 @@ nav ul.nav-links a {
 }
 
 nav ul.nav-links a:hover {
-  color: #ffffff; /* Couleur au survol */
+  color: #008000; /* Couleur au survol */
 }
 
 /* Section principale */
@@ -65,15 +99,15 @@ main {
 #accueil h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #000000;
+  color: #008000;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Lisibilité sur image */
   margin: 20px 0;
 }
 
 #accueil p {
   font-size: 1.2rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(19, 18, 18, 0.8);
+  color: #121312;
+  text-shadow: 1px 1px 3px #ffffff;
   max-width: 600px;
   margin: 20px auto;
   text-align: center;
@@ -87,7 +121,6 @@ main {
   gap: 50px; /* Espacement entre les produits */
   padding: 50px;
 }
-
 
 .produit img {
   width: 100%; /* Ajuste automatiquement à la largeur du conteneur */
@@ -103,23 +136,18 @@ main {
   transform: scale(1.1); /* Agrandit l'image de 10% au survol */
 }
 
-
-
-  
-
-.produit h3 {
+.produit h4 {
   font-size: 1.7rem;
   margin: 10px 0;
-  color: #030000;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Lisibilité sur image */
-
+  color: #000000;
+  text-shadow: 2px 2px 4px rgb(250, 244, 244); /* Lisibilité sur image */
 }
 
 .produit p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #000000;
   margin: 10px 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Lisibilité sur image */
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Lisibilité sur image */
 }
 .produit button {
   display: block; /* Assure que le bouton est affiché comme un bloc */
@@ -130,8 +158,8 @@ main {
 /* Style pour le lien "Commander" */
 .btn-commander {
   display: inline-block;
-  background: #007BFF; /* Couleur de fond */
-  color: #fff; /* Couleur du texte */
+  background: #000000; /* Couleur de fond */
+  color: #fcfbfb; /* Couleur du texte */
   text-decoration: none; /* Supprime le soulignement */
   padding: 10px 20px; /* Espace intérieur */
   font-size: 1rem; /* Taille de la police */
@@ -142,14 +170,13 @@ main {
 
 /* Effet au survol */
 .btn-commander:hover {
-  background: #0056b3; /* Couleur au survol */
+  background: #008000; /* Couleur au survol */
 }
-
 
 /* Bouton "Commander" */
 .produit button {
   background: #007BFF; /* Couleur principale */
-  color: #fff;
+  color: #000000;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -167,13 +194,14 @@ main {
 /* Section contact */
 #contact {
   padding: 40px;
-  background: rgba(145, 143, 143, 0.8);
+  background: rgba(255, 250, 250, 0.8);
   text-align: center;
 }
 
-#contact h2 {
+#contact h5 {
   font-size: 2rem;
   margin-bottom: 20px;
+
 }
 
 #contact form {
@@ -191,7 +219,7 @@ main {
 }
 
 #contact form button {
-  background: #007BFF;
+  background: #050505;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -203,7 +231,7 @@ main {
 }
 
 #contact form button:hover {
-  background: #0056b3;
+  background: #008000;
 }
 
 /* Icônes des réseaux sociaux */
@@ -233,11 +261,10 @@ main {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Pied de page */
 footer {
   background: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: #fcf6f6;
   text-align: center;
   padding: 10px;
   position: relative;
@@ -277,3 +304,4 @@ footer {
     width: 90%; /* Largeur ajustée sur petits écrans */
   }
 }
+
